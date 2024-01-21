@@ -83,7 +83,7 @@ Zum Berechnen der Nullstellen einer Funktion setzen wir die Funktion gleich 0 un
 
 $$
 \begin{aligned}
-    f_k(x)&= x^2 - 2kx + k^2 + \frac{k}{2} \\
+    f_k(x)&= x^2 - 2kx + k^2 + \frac{k}{2} \overset{!}{=} 0 \\
     x_{1,2} &= -\frac{-2k}{2} \pm \sqrt{(\frac{-2k}{2})^2 - (k^2 + \frac{k}{2})} \\
     &= k \pm \sqrt{k^2 - k^2 - \frac{k}{2}} \\
     &= k \pm \sqrt{- \frac{k}{2}} \\
@@ -106,12 +106,12 @@ gilt. Wir lösen die Ungleichung nach k auf:
 
 $$ 
 \begin{aligned}
-    -\frac k 2 &< 0 & \mid \cdot (-2) \\
-    k &> 0 
+    -\frac k 2 & < 0 & \mid \cdot (-2) \\
+    k & > 0 
 \end{aligned}
 $$
 
-Die Kurvenschar besitzt demnach keine Nullstellen, wenn $$k\>0$$ gilt.
+Die Kurvenschar besitzt demnach keine Nullstellen, wenn $k>0$ gilt.
 
 \subsubsection{Fall 2: 2 Nullstellen}
 
@@ -158,7 +158,7 @@ Einzig die Funktion $f_0(x)$ besitzt genau eine Nullstelle. Diese befindet sich 
 
 \subsection{Extremstellen}
 
-Wir bilden die Erste Ableitung der Funktionsschar. Wichtig ist, dass wir nach $x$ ableiten und $k$ als Konstante bleibt:
+Wir bilden die Erste Ableitung der Funktionsschar. Wichtig ist, dass wir nach $x$ ableiten und $k$ wie eine Konstante behandeln:
 
 $$
 \begin{aligned}
@@ -167,7 +167,7 @@ $$
 \end{aligned}
 $$
 
-Von der Ableitung bestimmen wir dann die Nullstellen. Diese sind unsere Extremstellen.
+Wir bestimmen nun die Nullstellen der ersten Ableitung. Diese sind unsere Extremstellen.
 
 $$
 \begin{aligned}
@@ -209,7 +209,7 @@ Da diese Gleichung keine Lösung in der Menge der reelen Zahlen besitzt, besitzt
 Wir setzen hierzu die Extremstellen in die 2. Ableitung ein und sehen, dass $f''_k(x) = 2 > 0$ ist. Wir sehen, dass es sich immer um Tiefpunkte handelt. Da es eine Parabel ist, welche nur einen Extrempunkt hat, lässt sich sagen, dass die Funktion keinen Funktionswert besitzt, der kleiner als der Funktionswert des Tiefpunkts ist. Daraus folgt der Wertebereich:
 
 $$
-W_{f_k} \in \mathbb{R}^{<\frac{k}{2}} 
+W_{f_k} = \{ y \in \mathbb{R}^{\ge\frac{k}{2}} : y = f_k(x), x \in D_{f_k} \}
 $$
 
 \section{Zeichnung der Funktionsschar}
