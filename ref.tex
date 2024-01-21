@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{url}
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[german]{babel}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[left=3cm,top=3cm,right=3cm,bottom=3cm,bindingoffset=0.5cm]{geometry}
+\renewcommand{\baselinestretch}{1.5} 
+
+\addbibresource{references.bib}
+
+\title{Sample LaTeX Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This is the abstract of the document. It provides a brief overview of what the document is about.
+\end{abstract}
+
+\section{Introduction}
+This section introduces the topic.
+
+\subsection{Background}
+Here is some background information.
+
+\section{Methodology}
+\label{sec:methodology}
+
+Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+
+\subsection{Data Collection}
+
+ Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg.
+
+\begin{table}[h]
+
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+Column 1 & Column 2 \\
+\hline
+Data 1 & Data 2 \\
+Data 3 & Data 4 \\
+\hline
+\end{tabular}
+
+\caption{Sample Table}
+\label{tab:sample}
+
+\end{table}
+
+\section{Results}
+
+ Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren. Doch alles Gutzureden konnte es nicht überzeugen und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es für ihre Projekte wieder und wieder mißbrauchten.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{example-image-a}
+\caption{Sample Figure}
+\label{fig:sample}
+\end{figure}
+
+Equation \ref{eq:sample} shows a mathematical formula:
+
+\begin{equation}
+\label{eq:sample}
+E=mc^2
+\end{equation}
+
+\section{Discussion}
+
+ Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich 
+
+According to \cite{einstein}, the theory of relativity...
+
+Lorem \autocite{knuth1984}
+ipsum \parencite{lshort}
+It was shown by \textcite{lamport1994} that
+
+\section{Conclusion}
+In conclusion, the document summarizes the key points.
+
+\newpage
+
+\printbibliography[title={Literaturverzeichnis}]
+
+\end{document}
+

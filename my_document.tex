@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{url}
 \usepackage[style=apa, backend=biber]{biblatex}
@@ -14,8 +15,8 @@
 
 \addbibresource{references.bib}
 
-\title{Sample LaTeX Document}
-\author{Your Name}
+\title{Musterlösung Kurvendiskussion einer Funktionsschar}
+\author{Danilo Stojanovic, Tim Gabrikowski}
 \date{\today}
 
 \begin{document}
@@ -23,74 +24,156 @@
 \maketitle
 
 \begin{abstract}
-This is the abstract of the document. It provides a brief overview of what the document is about.
+In diesem Dokument wird eine Kurvendiskussion an einer Funktionsschar durchgeführt. Eine Funktionsschar ist eine Menge von Funktionen, die durch einen gemeinsamen Parameter oder mehrere Parameter beschrieben werden. Diese Parameter können unterschiedliche Werte annehmen, wodurch verschiedene Funktionen innerhalb der Schar entstehen.
 \end{abstract}
 
-\section{Introduction}
-This section introduces the topic.
+\newpage
 
-\subsection{Background}
-Here is some background information.
+\section{Funktionsschar}
 
-\section{Methodology}
-\label{sec:methodology}
-
-Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
-
-\subsection{Data Collection}
-
- Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren. Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg.
-
-\begin{table}[h]
-
-\centering
-
-\begin{tabular}{|c|c|}
-\hline
-Column 1 & Column 2 \\
-\hline
-Data 1 & Data 2 \\
-Data 3 & Data 4 \\
-\hline
-\end{tabular}
-
-\caption{Sample Table}
-\label{tab:sample}
-
-\end{table}
-
-\section{Results}
-
- Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort "und" und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren. Doch alles Gutzureden konnte es nicht überzeugen und so dauerte es nicht lange, bis ihm ein paar heimtückische Werbetexter auflauerten, es mit Longe und Parole betrunken machten und es dann in ihre Agentur schleppten, wo sie es für ihre Projekte wieder und wieder mißbrauchten.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{example-image-a}
-\caption{Sample Figure}
-\label{fig:sample}
-\end{figure}
-
-Equation \ref{eq:sample} shows a mathematical formula:
+Die zu Analysierende Funktionsschar ist die Folgende:
 
 \begin{equation}
-\label{eq:sample}
-E=mc^2
+    \label{eq:function}
+    \begin{aligned}
+        f_k(x)&=(x-k)^2+\frac{k}{2} \\ 
+        &= x^2 - 2kx + k^2 + \frac{k}{2}
+    \end{aligned}
 \end{equation}
 
-\section{Discussion}
+\section{Kurvendiskussion}
 
- Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich 
+\subsection{Definitionsbereich}
 
-According to \cite{einstein}, the theory of relativity...
+Es handelt sich bei der Funktionsschar um eine ganzrationale Funktion 2. Grades, also ist der Definitionsbereich der Zahlenraum der reelen Zahlen.
 
-Lorem \autocite{knuth1984}
-ipsum \parencite{lshort}
-It was shown by \textcite{lamport1994} that
+\begin{equation}
+    \label{eq:defB}
+    D_{f_k} = \mathbb{R}
+\end{equation}
 
-\section{Conclusion}
-In conclusion, the document summarizes the key points.
+\subsection{Grenzverhalten}
 
-\newpage
+Da es sich um eine Funktion 2. Grades, also graden Grades handelt kommt diese aus dem unendlichen und verläuft in die gleiche Richtung ins unendliche. Vor dem $x^2$ steht ein positiver Faktor ($1$), also kommt die Funktion aus dem positiv unendlichen und verläuft ins positiv unendliche.
+
+\begin{equation}
+    \label{eq:lim}
+    \lim_{x \to \pm \infty} f(x) = + \infty
+\end{equation}
+
+\subsection{Achsenschnittpunkte}
+
+\subsubsection{Y-Achsenschnittpunkt}
+
+Den Schnittpunkt mit der Y-Achse berechnet man, indem man $x=0$ in die Funktionsschar einsetzt. 
+
+\begin{equation}
+    \label{eq:spyc}
+    \begin{aligned}
+        f_k(x)&= x^2 - 2kx + k^2 + \frac{k}{2} \\
+        f_k(0)&= 0^2 - 2k \cdot 0 + k^2 + \frac{k}{2} \\
+        &= k^2 + \frac{k}{2} \\
+    \end{aligned}
+\end{equation}
+
+Daraus folgt, dass der Schnittpunkt mit der y-Achse der folgende ist:
+
+\begin{equation}
+    \label{eq:spy}
+    SP_y(0 \mid k^2 + \frac{k}{2})
+\end{equation}
+
+\subsubsection {X-Achsenschnittpunkte}
+
+Zum Berechnen der Nullstellen einer Funktion 2. Grades setzen wir diese gleich 0 und nutzen wir die pq-Formel. Diese nutzen wir auch hier und finden somit die Nullstellen in abhängigkeit von $k$ heraus.
+
+\begin{equation}
+    \label{eq:pqf}
+    \begin{aligned}
+        f_k(x)&= x^2 - 2kx + k^2 + \frac{k}{2} \\
+        x_{1,2} &= -\frac{-2k}{2} \pm \sqrt{(\frac{-2k}{2})^2 - (k^2 + \frac{k}{2})} \\
+        &= k \pm \sqrt{k^2 - k^2 - \frac{k}{2}} \\
+        &= k \pm \sqrt{- \frac{k}{2}} \\
+    \end{aligned}
+\end{equation}
+
+Weitere Fälle...
+
+% Cases
+
+\subsection{Extremstellen}
+
+Wir bilden die Erste Ableitung der Funktionsschar:
+
+\begin{equation}
+    \label{eq:abl}
+    \begin{aligned}
+        f_k(x) &= x^2 - 2kx + k^2 + \frac{k}{2} \\
+        f'_k(x) &= 2x - 2k
+    \end{aligned}
+\end{equation}
+
+Von der Ableitung bestimmen wir dann die Nullstellen. Diese sind unsere Extremstellen.
+
+\begin{equation}
+    \label{eq:exs}
+    \begin{aligned}
+        f'_k(x) &= 2x - 2k = 0 \\
+        2x - 2k &= 0 &|\; + 2k \\
+        2x &= 2k &| \; :2 \\
+        x &= k
+    \end{aligned}
+\end{equation}
+
+Die Funktionen der Funktionen der Funktionsschar besitzen also ihre Extremstellen bei $x = k$. Wir können nun die Extrempunkte berechnen, indem wir für $x$ einfach $k$ einsetzen und dies Umformen.
+
+\begin{equation}
+    \label{eq:exp}
+    \begin{aligned}
+        f_k(x)&= x^2 - 2kx + k^2 + \frac{k}{2} \\
+        f_k(k)&= k^2 - 2k^2 + k^2 + \frac{k}{2} \\
+        f_k(k)&= \frac{k}{2} \\
+    \end{aligned}
+\end{equation}
+
+Die Extrempunkte sind also $Ep_f(k \mid \frac{k}{2})$.
+
+\subsection{Wendestellen}
+
+Wendestellen liegen bei den Nullstellen der zweiten Ableitung:
+
+\begin{equation}
+    \label{eq:ws}
+    \begin{aligned}
+        f'_k(x) &= 2x - 2k = 0 \\
+        f''_k(x) &= 2 \overset{!}{=} 0 \\
+        2 \ne 0
+    \end{aligned}
+\end{equation}
+
+Da diese Gleichung keine Lösung in der Menge der reelen Zahlen besitzt, besitzt keine Funktion der Funktionsschar einen Wendepunkt.
+
+\subsection {Wertebereich}
+
+Wir setzen hierzu die Extremstellen in die 2. Ableitung ein und sehen, dass $f''_k(x) = 2 > 0$ ist. Wir sehen, dass es sich immer um Tiefpunkte handelt. Da es eine Parabel ist, welche nur einen Extrempunkt hat, lässt sich sagen, dass es keinen Funktionswert gibt, der kleiner als der Tiefpunkt ist. Daraus folgt der Wertebereich:
+
+\begin{equation}
+    \label{eq:wrtB}
+    W_{f_k} = \mathbb{R} \in \{f_k(x) \ge \frac{k}{2}\}
+\end{equation}
+
+\section{Zeichnung der Funktionsschar}
+
+Abbildung \ref{fig:draw} zeigt die Funktionsschar für  $k \in [-3, 3]_{\mathbb{Z}}$
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{example-image-a}
+    \includegraphics[width=1\textwidth]{./images/IMG_1615.jpg}
+    \caption{Skizze der Funktionsschar}
+    \label{fig:draw}
+\end{figure}
+
 
 \printbibliography[title={Literaturverzeichnis}]
 
